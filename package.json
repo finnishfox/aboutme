@@ -1,0 +1,20 @@
+{
+  "name": "aboutme",
+  "version": "1.0.0",
+  "description": "My home page website",
+  "main": "gulpfile.js",
+  "author": "finnishfox",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.6.1",
+    "gulp-html-minifier2": "^1.1.8",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-include": "^2.3.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^2.1.0"
+  }
+}
