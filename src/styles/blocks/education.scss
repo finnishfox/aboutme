@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.education {
+  margin-bottom: $step7;
+  grid-area: education;
+
+  &__title {
+    @include title();
+    margin-bottom: $step4;
+  }
+
+  &__dates {
+    font-size: $font-size-subtitle;
+    line-height: $step4;
+    margin-bottom: $step3;
+  }
+
+  &__place {
+    font-size: $font-size-text;
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>telegram icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index-page" transform="translate(-527.000000, -380.000000)" fill-rule="nonzero">
+            <g id="social-links" transform="translate(521.000000, 182.000000)">
+                <g id="telegram" transform="translate(6.000000, 198.000000)">
+                    <g id="telegram-icon">
+                        <circle id="Oval" fill="#000000" cx="10" cy="10" r="10"></circle>
+                        <path d="M15.088,5.4055 L13.1795,15.1515 C13.1795,15.1515 12.9125,15.8275 12.1785,15.503 L7.774,12.083 L6.1725,11.299 L3.4765,10.38 C3.4765,10.38 3.0625,10.2315 3.0225,9.907 C2.9825,9.5825 3.4895,9.407 3.4895,9.407 L14.2075,5.149 C14.207,5.1485 15.088,4.7565 15.088,5.4055 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

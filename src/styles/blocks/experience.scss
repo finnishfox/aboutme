@@ -1,0 +1,34 @@
+@import "../variables.scss";
+
+.experience {
+  grid-area: experience;
+
+  &__title {
+    @include title();
+    margin-bottom: $step4;
+  }
+
+  &__year-block {
+    margin-bottom: $step4;
+  }
+
+  &__year {
+    font-size: $font-size-subtitle;
+    line-height: $step4;
+    margin-bottom: $step3;
+  }
+
+  &__text {
+    font-size: $font-size-text;
+    margin-bottom: $step2;
+  }
+
+  &__link {
+    color: $color-black;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:active {
+      color: $color-dark-gray;
+    }
+  }
+}

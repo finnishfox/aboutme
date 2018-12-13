@@ -5,25 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Daria Oshmarina, Frontend Developer</title>
-    <meta name="Description" content="Daria Oshmarina, Frontend Developer">
+    <title>Frontend Developer Daria Oshmarina</title>
+    <meta name="Description" content="Daria Oshmarina, Frontend Developer.
+    Create websites and web apps on React.js. Hate bad UI design.">
 </head>
 <body>
+<!--=include ../../dist/svgsprite/sprite.svg -->
 <div class="page">
     <section class="general-info">
-        <picture class="general-info__photo">
-            <source srcset="images/me2x.png" media="
-                        only screen and ( min-resolution: 200dpi),
-                        only screen and ( min-resolution: 1.25dppx)">
-            <img src="images/me.png" alt="my photo">
-        </picture>
+        <picture class="general-info__photo"><img sizes="160w" srcset="images/me2x.png 320w, images/me.png 160w"
+                                                  src="images/me.png" alt="my photo"></picture>
         <h1 class="general-info__title">Daria Oshmarina</h1>
         <h2 class="general-info__subtitle">Frontend Developer</h2>
-        <p class="general-info__text">Perm, Russia</p>
+        <p class="general-info__text general-info__text--with-icon">
+            <svg class="general-info__location-icon">
+                <use xlink:href="#location-icon"></use>
+            </svg>
+            Perm, Russia
+        </p>
         <p class="general-info__text">Age: 23</p>
         <p class="general-info__text">From: Russia</p>
         <p class="general-info__text">Available for hire</p>
         <p class="general-info__text">Languages: Russian(native), English, Czech</p>
+    </section>
+    <section class="skills">
+        <h2 class="skills__title">Skills</h2>
+        <p class="skills__text">HTML, Pug, Nunjucks, CSS, SCSS, JS, ES6,
+            React.js, Redux, ESLint, Gulp, Webpack, Git, npm, Sketch, Adobe photoshop, UX testing, SQL, MongoDB.</p>
+    </section>
+    <section class="about-me">
+        <h2 class="visually-hidden">About me</h2>
+        <p class="about-me__text">Hi. I am Daria, frontend developer. I love cooking, corgis, antiutopia books,
+            minimalism, travelling to nature. I hate bad UI design. </p>
+    </section>
+    <section class="social-links">
+        <h2 class="visually-hidden">Social links</h2>
+        <a href="mailto:onefinnishfox@gmail.com" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--email">
+                <use xlink:href="#email-icon"></use>
+            </svg>
+            onefinnishfox@gmail.com
+        </a>
+        <a href="https://twitter.com/finnish_fox" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--twitter">
+                <use xlink:href="#twitter-icon"></use>
+            </svg>
+            @finnish_fox
+        </a>
+        <a href="https://medium.com/@finnish_fox" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--medium">
+                <use xlink:href="#medium-icon"></use>
+            </svg>
+            @finnish_fox
+        </a>
+        <a href="https://github.com/finnishfox" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--github">
+                <use xlink:href="#github-icon"></use>
+            </svg>
+            finnishfox
+        </a>
+        <a href="https://www.facebook.com/finnishfox" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--facebook">
+                <use xlink:href="#facebook-icon"></use>
+            </svg>
+            finnishfox
+        </a>
+        <a href="http://t.me/finnishfox" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--telegram">
+                <use xlink:href="#telegram-icon"></use>
+            </svg>
+            @finnishfox
+        </a>
+        <a href="https://www.instagram.com/finnishfox/" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--instagram">
+                <use xlink:href="#instagram-icon"></use>
+            </svg>
+            finnishfox
+        </a>
+        <a href="skype:dariacandy" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--skype">
+                <use xlink:href="#skype-icon"></use>
+            </svg>
+            dariacandy
+        </a>
+        <a href="https://www.linkedin.com/in/finnishfox/" class="social-links__link">
+            <svg class="social-links__icon social-links__icon--linkedin">
+                <use xlink:href="#linkedin-icon"></use>
+            </svg>
+            finnishfox
+        </a>
+    </section>
+    <section class="education">
+        <h2 class="education__title">Education</h2>
+        <p class="education__dates">2013 — 2016</p>
+        <p class="education__place">Studied Software Systems at Czech Technical University in Prague</p>
+    </section>
+    <section class="experience">
+        <h2 class="experience__title">Experience</h2>
+        <div class="experience__year-block">
+            <p class="experience__year">2018</p>
+            <p class="experience__text">Finalist of
+                <a href="https://devchallenge.it/" class="experience__link">DEV Challenge</a> in category
+                Frontend HTML.</p>
+            <p class="experience__text">Worked on
+                <a href="https://moto.courses/" class="experience__link">moto.courses</a> project.</p>
+        </div>
+        <div class="experience__year-block">
+            <p class="experience__year">2017</p>
+            <p class="experience__text">Worked on admin panel of
+                <a href="https://frontender.info/" class="experience__link">Frontender
+                    Magazine</a> project.</p>
+        </div>
     </section>
 </div>
 </body>

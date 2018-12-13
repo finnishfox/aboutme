@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.skills {
+  max-width: $left-column-width;
+  margin-right: $step6;
+  grid-area: skills;
+
+  &__title {
+    @include title();
+    margin-bottom: $step3;
+  }
+
+  &__text {
+    font-size: $font-size-text;
+    line-height: $step6;
+  }
+}

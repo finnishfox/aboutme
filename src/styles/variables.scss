@@ -1,8 +1,26 @@
-$font:'Helvetica',sans-serif;
+$font: 'Helvetica', 'Arial', sans-serif;
 
-$font-size-heading:24px;
-$font-size-subtitle:20px;
-$font-size-text:16px;
+$font-size-heading: 24px;
+$font-size-subtitle: 20px;
+$font-size-text: 16px;
 
+$step0: 6px;
+$step1: 12px;
+$step2: 16px;
+$step3: 20px;
+$step4: 24px;
+$step5: 36px;
+$step6: 40px;
+$step7: 80px;
+$step8: 160px;
+
+$left-column-width: 440px;
+$right-column-width: 720px;
 
 $color-black: black;
+$color-dark-gray:#535353;
+
+@mixin title() {
+  font-size: $font-size-heading;
+  font-weight: bold;
+}

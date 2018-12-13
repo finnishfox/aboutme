@@ -15,12 +15,53 @@ gulp.task('connect', () =>
         root: 'dist'
     }));
 
-gulp.task('html',
-    () =>
+gulp.task('html', ['svg-sprite'], () =>
     gulp.src('./src/pages/*.html')
+        .pipe(include())
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist'))
         .pipe(connect.reload()));
+
+gulp.task('svg-sprite', () =>
+    gulp.src('src/images/svg/*.svg')
+        .pipe(svgmin())
+        .pipe(svgSprite({
+            shape: {
+                transform: [
+                    {
+                        svgo: {
+                            plugins: [
+                                {removeStyleElement: false},
+                                {inlineStyles: false}
+                            ]
+                        }
+                    }
+                ]
+            },
+            svg: {
+                xmlDeclaration: false,
+                doctypeDeclaration: false,
+                namespaceIDs: false,
+                namespaceClassnames: false,
+                dimensionAttributes: true,
+            },
+            mode:
+                {
+                    symbol: {
+                        inline: true,
+                        sprite: "sprite.svg",
+                        dest: 'svgsprite',
+                        example: false,
+                    }
+                }
+        }))
+        .pipe(gulp.dest('./dist'))
+);
+
+gulp.task('copy', () =>
+    gulp.src('src/fonts/**/*', {
+        base: 'src'
+    }).pipe(gulp.dest('./dist')));
 
 
 gulp.task('sass-to-css', () => gulp.src(['src/styles/reset.css', 'src/styles/blocks/*.scss'])
@@ -40,6 +81,6 @@ gulp.task('watch', () =>
     gulp.watch(['./src/**/**'], [
         'html',
         'sass-to-css',
-        ]));
+        'copy']));
 
 gulp.task('default', ['html', 'connect', 'sass-to-css', 'imagemin', 'watch']);

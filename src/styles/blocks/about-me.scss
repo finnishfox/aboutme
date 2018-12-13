@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.about-me {
+  grid-area: about-me;
+
+  &__text {
+    font-size: $font-size-text;
+    line-height: $step5;
+    max-width: 400px;
+  }
+}
