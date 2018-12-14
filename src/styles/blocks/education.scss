@@ -12,10 +12,18 @@
   &__dates {
     font-size: $font-size-subtitle;
     line-height: $step4;
-    margin-bottom: $step3;
+    margin-bottom: $step1;
   }
 
   &__place {
     font-size: $font-size-text;
+    margin-bottom: $step1;
+    line-height: $step6;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .education {
+    margin-bottom: 0;
   }
 }

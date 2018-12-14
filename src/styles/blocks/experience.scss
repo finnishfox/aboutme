@@ -20,12 +20,14 @@
 
   &__text {
     font-size: $font-size-text;
-    margin-bottom: $step2;
+    margin-bottom:$step1;
+    line-height: $step5;
   }
 
   &__link {
     color: $color-black;
     text-decoration: underline;
+    transition: color 0.3s ease-in-out;
 
     &:hover, &:focus, &:active {
       color: $color-dark-gray;
