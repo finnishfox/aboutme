@@ -12,12 +12,22 @@
     color: $color-black;
     margin-bottom: $step3;
     transition: color 0.3s ease-in-out;
+    outline: none;
 
-    &:hover, &:focus, &:active {
-      color: $color-dark-gray;
+    &:hover, &:focus {
+      color: $color-coral;
 
       .social-links__icon {
-        fill: $color-dark-gray;
+        fill: $color-coral;
+        transition: fill 0.3s ease-in-out;
+      }
+    }
+
+    &:active {
+      color: $color-dark-coral;
+
+      .social-links__icon {
+        fill: $color-dark-coral;
         transition: fill 0.3s ease-in-out;
       }
     }
