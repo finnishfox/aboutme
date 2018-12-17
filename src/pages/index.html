@@ -14,8 +14,16 @@
 <!--=include ../../dist/svgsprite/sprite.svg -->
 <div class="page">
     <section class="general-info" itemscope itemtype="http://schema.org/Person">
-        <picture class="general-info__photo"><img sizes="160w" srcset="images/me2x.png 320w, images/me.png 160w"
-                                                  src="images/me.png" alt="my photo"></picture>
+        <picture class="general-info__photo">
+            <source srcset="images/me2x.png" media="
+                        only screen and ( min-resolution: 200dpi),
+                        only screen and ( min-resolution: 1.25dppx)">
+            <img sizes="160px"
+                 src="images/me.png"
+                 alt="my photo"
+                 srcset="images/me2x.png 320w, images/me.png 160w"
+            />
+        </picture>
         <h1 class="general-info__title"><span itemprop="name">Daria Oshmarina </span></h1>
         <h2 class="general-info__subtitle" itemprop="jobTitle">Frontend Developer</h2>
         <p class="general-info__text general-info__text--with-icon">
@@ -31,7 +39,7 @@
     </section>
     <section class="skills">
         <h2 class="skills__title">Skills</h2>
-        <p class="skills__text">HTML, Pug, Nunjucks, CSS, SCSS, JS, ES6,
+        <p class="skills__text">HTML, Pug, Nunjucks, CSS, SCSS, BEM, JS, ES6,
             React.js, Redux, ESLint, Gulp, Webpack, Git, npm, Sketch, Adobe photoshop, UX testing, SQL, MongoDB.</p>
     </section>
     <section class="about-me">
@@ -44,7 +52,8 @@
         <a href="mailto:onefinnishfox@gmail.com" class="social-links__link">
             <svg class="social-links__icon social-links__icon--email">
                 <use xlink:href="#email-icon"></use>
-            </svg>onefinnishfox@gmail.com
+            </svg>
+            onefinnishfox@gmail.com
         </a>
         <a href="https://twitter.com/finnish_fox" class="social-links__link">
             <svg class="social-links__icon social-links__icon--twitter">
