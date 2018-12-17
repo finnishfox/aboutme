@@ -9,7 +9,7 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     include = require("gulp-include");
 
-const distFolder = 'dist';
+const distFolder = 'docs';
 
 
 gulp.task('connect', () =>
