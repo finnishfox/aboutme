@@ -1,0 +1,55 @@
+@import "../variables.scss";
+
+.projects{
+
+  &__title{
+    @include title();
+    margin-bottom: $step3;
+  }
+
+  &__link{
+    display: block;
+    font-size: $font-size-subtitle;
+    line-height: $step4;
+    margin-bottom: $step3;
+    color: $color-black;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    outline: none;
+
+    &:hover, &:focus {
+      color: $color-coral;
+    }
+
+    &:active {
+      color: $color-dark-coral;
+    }
+  }
+
+  &__code-link{
+    display: block;
+    font-size: $font-size-text;
+    margin-bottom: $step1;
+    line-height: $step5;
+    color: $color-black;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    outline: none;
+    position: relative;
+
+    &:hover, &:focus {
+      color: $color-coral;
+    }
+
+    &:active {
+      color: $color-dark-coral;
+    }
+  }
+
+  &__technologies{
+    font-size: $font-size-text;
+    margin-bottom: $step1;
+    line-height: $step5;
+    color: $color-black;
+  }
+}
