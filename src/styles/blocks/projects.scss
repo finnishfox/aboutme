@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .projects{
+  grid-area: projects;
 
   &__title{
     @include title();

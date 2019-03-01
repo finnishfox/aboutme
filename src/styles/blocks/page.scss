@@ -6,7 +6,7 @@
   font-family: $font;
   display: grid;
   grid-column-gap: $step6;
-  grid-template-areas: "general-info about-me" "general-info social-links" "skills education" ". experience";
+  grid-template-areas: "general-info about-me" "general-info social-links" "skills education" "projects experience";
 }
 
 @media screen and (max-width: 1280px) {
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 700px) {
   .page {
-    grid-template-areas: "general-info" "about-me" "skills" "education" "experience" "social-links";
+    grid-template-areas: "general-info" "about-me" "skills" "education" "experience" "projects" "social-links";
     grid-row-gap: $step6;
   }
 }
