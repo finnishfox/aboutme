@@ -4,11 +4,18 @@
 
   &__title{
     @include title();
-    margin-bottom: $step3;
+    margin-bottom: $step4;
+  }
+
+  &__project{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: $step4;
   }
 
   &__link{
-    display: block;
+    display: inline-block;
     font-size: $font-size-subtitle;
     line-height: $step4;
     margin-bottom: $step3;
@@ -27,7 +34,7 @@
   }
 
   &__code-link{
-    display: block;
+    display: inline-block;
     font-size: $font-size-text;
     margin-bottom: $step1;
     line-height: $step5;
@@ -48,7 +55,6 @@
 
   &__technologies{
     font-size: $font-size-text;
-    margin-bottom: $step1;
     line-height: $step5;
     color: $color-black;
   }
