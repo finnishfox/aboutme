@@ -35,3 +35,13 @@
     margin: $step1 $step1 0;
   }
 }
+
+@media print{
+  .page{
+    display: block;
+
+    & *{
+      break-inside:avoid;
+    }
+  }
+}

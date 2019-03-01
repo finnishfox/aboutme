@@ -9,3 +9,9 @@
     max-width: 400px;
   }
 }
+
+@media print {
+  .about-me {
+    margin-bottom: $step7;
+  }
+}

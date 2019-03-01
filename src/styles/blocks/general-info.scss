@@ -56,3 +56,17 @@
     }
   }
 }
+
+@media print {
+  .general-info {
+    margin-bottom: $step7;
+
+    &__location-icon {
+      left: 0;
+    }
+
+    &__text--with-icon {
+      padding-left: 20px;
+    }
+  }
+}

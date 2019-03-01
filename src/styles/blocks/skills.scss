@@ -14,3 +14,9 @@
     line-height: $step6;
   }
 }
+
+@media print {
+  .skills {
+    margin-bottom: $step7;
+  }
+}

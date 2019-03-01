@@ -59,3 +59,9 @@
     color: $color-black;
   }
 }
+
+@media print {
+  .projects {
+    margin-bottom: $step7;
+  }
+}
