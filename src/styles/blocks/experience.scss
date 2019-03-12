@@ -43,5 +43,9 @@
 @media print {
   .experience {
     margin-bottom: $step7;
+
+    &__link:after{
+      content: ' (' attr(href) ')';
+    }
   }
 }

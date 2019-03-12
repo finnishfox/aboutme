@@ -1,21 +1,21 @@
 @import "../variables.scss";
 
-.projects{
+.projects {
   grid-area: projects;
 
-  &__title{
+  &__title {
     @include title();
     margin-bottom: $step4;
   }
 
-  &__project{
+  &__project {
     display: flex;
     flex-direction: column;
     align-items: start;
     margin-bottom: $step4;
   }
 
-  &__link{
+  &__link {
     display: inline-block;
     font-size: $font-size-subtitle;
     line-height: $step4;
@@ -34,7 +34,7 @@
     }
   }
 
-  &__code-link{
+  &__code-link {
     display: inline-block;
     font-size: $font-size-text;
     margin-bottom: $step1;
@@ -54,7 +54,7 @@
     }
   }
 
-  &__technologies{
+  &__technologies {
     font-size: $font-size-text;
     line-height: $step5;
     color: $color-black;
@@ -64,5 +64,9 @@
 @media print {
   .projects {
     margin-bottom: $step7;
+
+    &__link:after, &__code-link:after {
+      content: ' (' attr(href) ')';
+    }
   }
 }

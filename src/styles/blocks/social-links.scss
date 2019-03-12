@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 700px),print {
+@media screen and (max-width: 700px), print {
   .social-links__link {
     padding-left: $step6;
 
@@ -73,8 +73,12 @@
   }
 }
 
-@media print{
-  .social-links{
+@media print {
+  .social-links {
     padding-top: 3px;
+
+    &__link:after {
+      content: ' (' attr(href) ')';
+    }
   }
 }
